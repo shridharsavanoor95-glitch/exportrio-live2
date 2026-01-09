@@ -4,59 +4,61 @@ export default function Home() {
       {/* NAVBAR */}
       <header
         style={{
-          padding: "20px 60px",
-          borderBottom: "1px solid #1f2937",
+          padding: "24px 72px",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
-          background: "#020617",
+          borderBottom: "1px solid rgba(255,255,255,0.06)",
         }}
       >
-        <div style={{ fontSize: 22, fontWeight: "bold", color: "#fff" }}>
+        <div style={{ fontSize: 22, fontWeight: 600, color: "#fff" }}>
           Exportrio
         </div>
 
-        <nav style={{ display: "flex", gap: 24, fontSize: 14 }}>
-          <a href="/products" style={navLink}>Products</a>
-          <a href="/markets" style={navLink}>Markets</a>
-          <a href="/quality" style={navLink}>Quality</a>
-          <a href="/contact" style={navLink}>Contact</a>
+        <nav style={{ display: "flex", gap: 28, fontSize: 14 }}>
+          <NavLink href="/products">Products</NavLink>
+          <NavLink href="/markets">Markets</NavLink>
+          <NavLink href="/quality">Quality</NavLink>
+          <NavLink href="/contact">Contact</NavLink>
         </nav>
       </header>
 
       {/* HERO */}
-      <section
-        style={{
-          padding: "100px 60px",
-          background:
-            "linear-gradient(180deg, #020617 0%, #020617 60%, #020617 100%)",
-        }}
-      >
-        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+      <section style={{ padding: "120px 72px" }}>
+        <div style={{ maxWidth: 1100 }}>
           <h1
             style={{
-              fontSize: 54,
-              fontWeight: "bold",
-              lineHeight: 1.2,
-              marginBottom: 20,
+              fontSize: 56,
+              lineHeight: 1.15,
+              fontWeight: 700,
+              marginBottom: 24,
+              color: "#fff",
             }}
           >
             Premium Indian Rice Exporter
           </h1>
 
-          <p style={{ fontSize: 18, color: "#cbd5f5", maxWidth: 720 }}>
+          <p
+            style={{
+              fontSize: 19,
+              maxWidth: 720,
+              color: "#c7d2fe",
+              lineHeight: 1.6,
+            }}
+          >
             Exportrio supplies high-quality Indian Basmati and Non-Basmati rice to
-            Africa, Middle East, Asia, and Europe with strict FOB India terms.
+            Africa, Middle East, Asia, and Europe, delivering consistent quality
+            through FOB India containerized shipments.
           </p>
 
           <div
             style={{
-              marginTop: 30,
-              padding: 20,
-              borderRadius: 8,
-              background: "#020617",
-              border: "1px solid #1f2937",
-              maxWidth: 520,
+              marginTop: 36,
+              padding: 24,
+              borderRadius: 14,
+              background: "rgba(255,255,255,0.04)",
+              border: "1px solid rgba(255,255,255,0.08)",
+              maxWidth: 560,
             }}
           >
             <strong>FOB India</strong> · 25 MT / 20ft container
@@ -64,16 +66,18 @@ export default function Home() {
             Ports: Nhava Sheva · Mundra · Kandla
           </div>
 
-          <div style={{ marginTop: 40 }}>
+          <div style={{ marginTop: 48 }}>
             <a
               href="/contact"
               style={{
-                background: "#4f46e5",
-                padding: "14px 28px",
-                borderRadius: 8,
+                padding: "16px 34px",
+                borderRadius: 999,
+                background:
+                  "linear-gradient(135deg, #6366f1 0%, #4f46e5 100%)",
                 color: "#fff",
                 textDecoration: "none",
-                fontWeight: "bold",
+                fontWeight: 600,
+                fontSize: 15,
               }}
             >
               Request FOB Quote
@@ -82,40 +86,39 @@ export default function Home() {
         </div>
       </section>
 
-      {/* VALUE CARDS */}
-      <section style={{ padding: "80px 60px", background: "#020617" }}>
+      {/* TRUST CARDS */}
+      <section style={{ padding: "90px 72px" }}>
         <div
           style={{
             maxWidth: 1100,
-            margin: "0 auto",
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-            gap: 24,
+            gap: 28,
           }}
         >
-          <Card title="Export-Ready">
-            APEDA registered, FSSAI compliant, ISO / HACCP mills
-          </Card>
-
-          <Card title="Africa Focused">
-            Strong supply experience for Benin, Senegal & Kenya
-          </Card>
-
-          <Card title="Bulk FOB Shipments">
-            25 MT / 20ft containers from major Indian ports
-          </Card>
+          <GlassCard
+            title="Export Compliance"
+            text="APEDA registered exporter. FSSAI compliant. ISO & HACCP certified mills."
+          />
+          <GlassCard
+            title="Africa Market Expertise"
+            text="Specialized supply to Benin, Senegal, and Kenya with demand-matched rice grades."
+          />
+          <GlassCard
+            title="Bulk FOB Logistics"
+            text="25 MT / 20ft containers from major Indian ports with export-ready documentation."
+          />
         </div>
       </section>
 
       {/* FOOTER */}
       <footer
         style={{
-          padding: 30,
+          padding: 40,
+          borderTop: "1px solid rgba(255,255,255,0.06)",
           textAlign: "center",
-          borderTop: "1px solid #1f2937",
           fontSize: 13,
           color: "#94a3b8",
-          background: "#020617",
         }}
       >
         © {new Date().getFullYear()} Exportrio. All rights reserved.
@@ -126,26 +129,42 @@ export default function Home() {
 
 /* ---------- Helpers ---------- */
 
-const navLink = {
-  color: "#cbd5f5",
-  textDecoration: "none",
-};
+function NavLink({ href, children }) {
+  return (
+    <a
+      href={href}
+      style={{
+        color: "#c7d2fe",
+        textDecoration: "none",
+        fontWeight: 500,
+      }}
+    >
+      {children}
+    </a>
+  );
+}
 
-function Card({ title, children }) {
+function GlassCard({ title, text }) {
   return (
     <div
       style={{
-        padding: 24,
-        borderRadius: 12,
-        background: "#020617",
-        border: "1px solid #1f2937",
+        padding: 28,
+        borderRadius: 18,
+        background: "rgba(255,255,255,0.04)",
+        border: "1px solid rgba(255,255,255,0.08)",
       }}
     >
-      <h3 style={{ fontSize: 18, marginBottom: 10 }}>{title}</h3>
-      <p style={{ color: "#cbd5f5", fontSize: 14 }}>{children}</p>
+      <h3 style={{ fontSize: 18, marginBottom: 10, color: "#fff" }}>
+        {title}
+      </h3>
+      <p style={{ fontSize: 14, lineHeight: 1.6, color: "#c7d2fe" }}>
+        {text}
+      </p>
     </div>
   );
 }
+
+
 
 
 
