@@ -16,7 +16,7 @@ export default function Home() {
           <a href="/products" style={{ color: "#ccc" }}>Products</a> 
           <a href="/markets" style={{ color: "#ccc" }}>Markets</a>
           <a href="quality" style={{ color: "#ccc" }}>Quality</a>
-          <a href="#contact" style={{ color: "#ccc" }}>Contact</a>
+          <a href="contact" style={{ color: "#ccc" }}>Contact</a>
         </nav>
       </header>
 
