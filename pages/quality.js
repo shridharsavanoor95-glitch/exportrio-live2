@@ -135,4 +135,12 @@ function CertCard({ title, text }) {
         border: "1px solid rgba(255,255,255,0.08)",
       }}
     >
-      <h3 style={{ fontSize:
+      <h3 style={{ fontSize: 18, marginBottom: 10, color: "#fff" }}>
+        {title}
+      </h3>
+      <p style={{ fontSize: 14, lineHeight: 1.6, color: "#c7d2fe" }}>
+        {text}
+      </p>
+    </div>
+  );
+}
