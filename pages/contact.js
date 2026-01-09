@@ -17,8 +17,8 @@ export default function Contact() {
       <h3 style={{ marginTop: 40 }}>Contact Details</h3>
 
       <p style={{ marginTop: 10 }}>
-        📧 Email: <strong>sales@exportrio.com</strong><br />
-        📱 WhatsApp: <strong>+91-XXXXXXXXXX</strong>
+        📧 Email: <strong>hello@exportrio.com</strong><br />
+        📱 WhatsApp: <strong>+91-9986668655</strong>
       </p>
 
       <p style={{ marginTop: 30, fontSize: 14, color: "#777" }}>
