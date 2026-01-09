@@ -13,11 +13,12 @@ export default function Home() {
       >
         <strong style={{ fontSize: 20 }}>Exportrio</strong>
         <nav style={{ display: "flex", gap: 20, fontSize: 14 }}>
-          <a href="/products" style={{ color: "#ccc" }}>Products</a> 
-          <a href="/markets" style={{ color: "#ccc" }}>Markets</a>
-          <a href="quality" style={{ color: "#ccc" }}>Quality</a>
-          <a href="contact" style={{ color: "#ccc" }}>Contact</a>
-        </nav>
+  <a href="/products" style={{ color: "#ccc" }}>Products</a>
+  <a href="/markets" style={{ color: "#ccc" }}>Markets</a>
+  <a href="/quality" style={{ color: "#ccc" }}>Quality</a>
+  <a href="/contact" style={{ color: "#ccc" }}>Contact</a>
+</nav>
+
       </header>
 
       {/* HERO */}
