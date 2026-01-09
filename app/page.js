@@ -4,112 +4,118 @@ export default function Home() {
       {/* NAVBAR */}
       <header
         style={{
-          padding: "20px 40px",
-          borderBottom: "1px solid #222",
+          padding: "20px 60px",
+          borderBottom: "1px solid #1f2937",
           display: "flex",
           justifyContent: "space-between",
           alignItems: "center",
+          background: "#020617",
         }}
       >
-        <strong style={{ fontSize: 20 }}>Exportrio</strong>
-        <nav style={{ display: "flex", gap: 20, fontSize: 14 }}>
-  <a href="/products" style={{ color: "#ccc" }}>Products</a>
-  <a href="/markets" style={{ color: "#ccc" }}>Markets</a>
-  <a href="/quality" style={{ color: "#ccc" }}>Quality</a>
-  <a href="/contact" style={{ color: "#ccc" }}>Contact</a>
-        <a href="/Exportrio_Tender_Profile.pdf">Download Company Profile (PDF)</a>
+        <div style={{ fontSize: 22, fontWeight: "bold", color: "#fff" }}>
+          Exportrio
+        </div>
 
-</nav>
-
+        <nav style={{ display: "flex", gap: 24, fontSize: 14 }}>
+          <a href="/products" style={navLink}>Products</a>
+          <a href="/markets" style={navLink}>Markets</a>
+          <a href="/quality" style={navLink}>Quality</a>
+          <a href="/contact" style={navLink}>Contact</a>
+        </nav>
       </header>
 
       {/* HERO */}
-      <section style={{ padding: "80px 40px", maxWidth: 1100, margin: "0 auto" }}>
-        <h1 style={{ fontSize: 48, marginBottom: 20 }}>
-          Premium Indian Rice Exporter
-        </h1>
-        <p style={{ fontSize: 18, color: "#ccc", maxWidth: 700 }}>
-          Exportrio exports high-quality Indian Basmati and Non-Basmati rice to
-          Africa, Middle East, Asia, and Europe on a strict FOB India basis.
-        </p>
+      <section
+        style={{
+          padding: "100px 60px",
+          background:
+            "linear-gradient(180deg, #020617 0%, #020617 60%, #020617 100%)",
+        }}
+      >
+        <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+          <h1
+            style={{
+              fontSize: 54,
+              fontWeight: "bold",
+              lineHeight: 1.2,
+              marginBottom: 20,
+            }}
+          >
+            Premium Indian Rice Exporter
+          </h1>
 
-        <div style={{ marginTop: 30, fontSize: 16 }}>
-          <strong>FOB India</strong> · 25 MT / 20ft container
-          <br />
-          Ports: Nhava Sheva · Mundra · Kandla
+          <p style={{ fontSize: 18, color: "#cbd5f5", maxWidth: 720 }}>
+            Exportrio supplies high-quality Indian Basmati and Non-Basmati rice to
+            Africa, Middle East, Asia, and Europe with strict FOB India terms.
+          </p>
+
+          <div
+            style={{
+              marginTop: 30,
+              padding: 20,
+              borderRadius: 8,
+              background: "#020617",
+              border: "1px solid #1f2937",
+              maxWidth: 520,
+            }}
+          >
+            <strong>FOB India</strong> · 25 MT / 20ft container
+            <br />
+            Ports: Nhava Sheva · Mundra · Kandla
+          </div>
+
+          <div style={{ marginTop: 40 }}>
+            <a
+              href="/contact"
+              style={{
+                background: "#4f46e5",
+                padding: "14px 28px",
+                borderRadius: 8,
+                color: "#fff",
+                textDecoration: "none",
+                fontWeight: "bold",
+              }}
+            >
+              Request FOB Quote
+            </a>
+          </div>
         </div>
+      </section>
 
-        <a
-          href="#contact"
+      {/* VALUE CARDS */}
+      <section style={{ padding: "80px 60px", background: "#020617" }}>
+        <div
           style={{
-            display: "inline-block",
-            marginTop: 40,
-            padding: "14px 28px",
-            backgroundColor: "#4f46e5",
-            color: "#fff",
-            textDecoration: "none",
-            borderRadius: 6,
-            fontWeight: "bold",
+            maxWidth: 1100,
+            margin: "0 auto",
+            display: "grid",
+            gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+            gap: 24,
           }}
         >
-          Request FOB Quote
-        </a>
-      </section>
+          <Card title="Export-Ready">
+            APEDA registered, FSSAI compliant, ISO / HACCP mills
+          </Card>
 
-      {/* PRODUCTS */}
-      <section id="products" style={{ padding: "60px 40px", background: "#111" }}>
-        <h2 style={{ fontSize: 32 }}>Rice Products</h2>
-        <ul style={{ color: "#ccc", marginTop: 20, lineHeight: 1.8 }}>
-          <li>Basmati Rice – 1121, 1509, Traditional</li>
-          <li>Non-Basmati Rice – IR64, Sona Masoori, Swarna</li>
-          <li>Parboiled Rice – Long & Medium Grain</li>
-          <li>Bulk & Private Label Packaging</li>
-        </ul>
-      </section>
+          <Card title="Africa Focused">
+            Strong supply experience for Benin, Senegal & Kenya
+          </Card>
 
-      {/* MARKETS */}
-      <section id="markets" style={{ padding: "60px 40px" }}>
-        <h2 style={{ fontSize: 32 }}>Export Markets</h2>
-        <p style={{ color: "#ccc", marginTop: 16 }}>
-          Africa (Benin, Senegal, Kenya), Middle East, Asia, and Europe.
-          We specialize in containerized FOB shipments tailored to regional demand.
-        </p>
-      </section>
-
-      {/* QUALITY */}
-      <section id="quality" style={{ padding: "60px 40px", background: "#111" }}>
-        <h2 style={{ fontSize: 32 }}>Quality & Certifications</h2>
-        <ul style={{ color: "#ccc", marginTop: 20, lineHeight: 1.8 }}>
-          <li>APEDA Registered Exporter</li>
-          <li>FSSAI Compliant</li>
-          <li>ISO / HACCP Certified Mills</li>
-          <li>Fumigation & Phytosanitary Certificates</li>
-          <li>SGS / Intertek Inspection on Request</li>
-        </ul>
-      </section>
-
-      {/* CONTACT */}
-      <section id="contact" style={{ padding: "60px 40px" }}>
-        <h2 style={{ fontSize: 32 }}>Request a Quote</h2>
-        <p style={{ color: "#ccc", marginBottom: 20 }}>
-          Share your requirement and our team will respond promptly.
-        </p>
-
-        <p style={{ color: "#ccc" }}>
-          Email: <strong>sales@exportrio.com</strong>
-          <br />
-          WhatsApp: <strong>+91-XXXXXXXXXX</strong>
-        </p>
+          <Card title="Bulk FOB Shipments">
+            25 MT / 20ft containers from major Indian ports
+          </Card>
+        </div>
       </section>
 
       {/* FOOTER */}
       <footer
         style={{
-          padding: 20,
+          padding: 30,
           textAlign: "center",
-          borderTop: "1px solid #222",
+          borderTop: "1px solid #1f2937",
           fontSize: 13,
-          color: "#777",
+          color: "#94a3b8",
+          background: "#020617",
         }}
       >
         © {new Date().getFullYear()} Exportrio. All rights reserved.
@@ -117,5 +123,29 @@ export default function Home() {
     </>
   );
 }
+
+/* ---------- Helpers ---------- */
+
+const navLink = {
+  color: "#cbd5f5",
+  textDecoration: "none",
+};
+
+function Card({ title, children }) {
+  return (
+    <div
+      style={{
+        padding: 24,
+        borderRadius: 12,
+        background: "#020617",
+        border: "1px solid #1f2937",
+      }}
+    >
+      <h3 style={{ fontSize: 18, marginBottom: 10 }}>{title}</h3>
+      <p style={{ color: "#cbd5f5", fontSize: 14 }}>{children}</p>
+    </div>
+  );
+}
+
 
 
