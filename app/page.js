@@ -17,6 +17,8 @@ export default function Home() {
   <a href="/markets" style={{ color: "#ccc" }}>Markets</a>
   <a href="/quality" style={{ color: "#ccc" }}>Quality</a>
   <a href="/contact" style={{ color: "#ccc" }}>Contact</a>
+        <a href="/Exportrio_Tender_Profile.pdf">Download Company Profile (PDF)</a>
+
 </nav>
 
       </header>
