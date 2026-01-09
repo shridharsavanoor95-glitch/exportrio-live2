@@ -123,8 +123,7 @@ export default function Quality() {
   );
 }
 
-/* ---------- Helper ---------- */
-
+/* Helper component */
 function CertCard({ title, text }) {
   return (
     <div
