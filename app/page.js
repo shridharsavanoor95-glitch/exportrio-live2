@@ -53,6 +53,7 @@ export default function Home() {
 >
   GLOBAL TRADE, SIMPLIFIED
 </div>
+    </div>
 </div>
 
 
