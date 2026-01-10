@@ -38,21 +38,6 @@ export default function Home() {
     }}
   >
     GLOBAL TRADE, SIMPLIFIED
- <div
-  style={{
-    marginTop: 4,
-    fontFamily:
-      "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif",
-    fontSize: 11,
-    fontWeight: 500,
-    letterSpacing: "2px",
-    color: "#94a3b8",
-    textTransform: "uppercase",
-    display: window?.innerWidth < 640 ? "none" : "block",
-  }}
->
-  GLOBAL TRADE, SIMPLIFIED
-</div>
     </div>
 </div>
 
