@@ -11,9 +11,50 @@ export default function Home() {
           borderBottom: "1px solid rgba(255,255,255,0.06)",
         }}
       >
-        <div style={{ fontSize: 22, fontWeight: 600, color: "#fff" }}>
-          Exportrio
-        </div>
+        <div style={{ lineHeight: 1.1 }}>
+  <div
+    style={{
+      fontFamily:
+        "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif",
+      fontSize: 22,
+      fontWeight: 700,
+      letterSpacing: "1.5px",
+      color: "#f1f5f9",
+    }}
+  >
+    EXPORTRIO
+  </div>
+
+  <div
+    style={{
+      marginTop: 4,
+      fontFamily:
+        "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif",
+      fontSize: 11,
+      fontWeight: 500,
+      letterSpacing: "2px",
+      color: "#94a3b8",
+      textTransform: "uppercase",
+    }}
+  >
+    GLOBAL TRADE, SIMPLIFIED
+ <div
+  style={{
+    marginTop: 4,
+    fontFamily:
+      "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif",
+    fontSize: 11,
+    fontWeight: 500,
+    letterSpacing: "2px",
+    color: "#94a3b8",
+    textTransform: "uppercase",
+    display: window?.innerWidth < 640 ? "none" : "block",
+  }}
+>
+  GLOBAL TRADE, SIMPLIFIED
+</div>
+</div>
+
 
         <nav style={{ display: "flex", gap: 28, fontSize: 14 }}>
           <NavLink href="/products">Products</NavLink>
