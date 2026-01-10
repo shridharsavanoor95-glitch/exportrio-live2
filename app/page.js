@@ -18,7 +18,7 @@ export default function Home() {
         <nav style={{ display: "flex", gap: 28, fontSize: 14 }}>
           <NavLink href="/products">Products</NavLink>
           <NavLink href="/markets">Markets</NavLink>
-          <NavLink href="/quality">Quality</NavLink>
+          <NavLink href="/quality-static.pdf.html">Quality</NavLink>
           <NavLink href="/contact">Contact</NavLink>
         </nav>
       </header>
