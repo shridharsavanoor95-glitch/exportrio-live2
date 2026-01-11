@@ -1,1 +1,111 @@
-public folder
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact | Exportrio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Exportrio – Indian rice exporter supplying non-basmati rice to global markets on FOB India basis." />
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+      background: radial-gradient(1200px 600px at top, #0f172a 0%, #020617 60%);
+      color: #e5e7eb;
+    }
+    .container {
+      max-width: 1000px;
+      padding: 100px 72px;
+      margin: auto;
+    }
+    h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+    p {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #c7d2fe;
+      max-width: 720px;
+    }
+    .card {
+      margin-top: 50px;
+      padding: 36px;
+      border-radius: 20px;
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      max-width: 600px;
+    }
+    .item {
+      margin-bottom: 20px;
+      font-size: 16px;
+    }
+    .label {
+      color: #94a3b8;
+      font-size: 13px;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+    .value {
+      font-size: 17px;
+      color: #e5e7eb;
+    }
+    a {
+      color: #c7d2fe;
+      text-decoration: none;
+    }
+    .cta {
+      margin-top: 30px;
+      display: inline-block;
+      padding: 14px 28px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, #6366f1, #4f46e5);
+      color: #fff;
+      font-weight: 600;
+    }
+    .note {
+      margin-top: 60px;
+      font-size: 14px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Request a Quote</h1>
+    <p>
+      Share your requirement and our team will respond promptly.
+      Exportrio supplies Indian rice to global markets on a
+      <strong>FOB India</strong> basis.
+    </p>
+
+    <div class="card">
+      <div class="item">
+        <div class="label">Email</div>
+        <div class="value">
+          <a href="mailto:sales@exportrio.com">sales@exportrio.com</a>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="label">WhatsApp</div>
+        <div class="value">
+          <a href="https://wa.me/91XXXXXXXXXX" target="_blank">
+            +91-XXXXXXXXXX
+          </a>
+        </div>
+      </div>
+
+      <a class="cta" href="https://wa.me/91XXXXXXXXXX" target="_blank">
+        WhatsApp Us
+      </a>
+    </div>
+
+    <div class="note">
+      FOB Ports: Nhava Sheva · Mundra · Kandla<br />
+      MOQ: 25 MT / 20ft container
+    </div>
+  </div>
+</body>
+</html>
