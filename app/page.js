@@ -140,16 +140,48 @@ export default function Home() {
 
       {/* FOOTER */}
       <footer
-        style={{
-          padding: 40,
-          borderTop: "1px solid rgba(255,255,255,0.06)",
-          textAlign: "center",
-          fontSize: 13,
-          color: "#94a3b8",
-        }}
-      >
-        © {new Date().getFullYear()} Exportrio. All rights reserved.
-      </footer>
+  style={{
+    padding: "40px 72px",
+    borderTop: "1px solid rgba(255,255,255,0.06)",
+    textAlign: "center",
+    color: "#94a3b8",
+  }}
+>
+  <div style={{ marginBottom: 16 }}>
+    <div
+      style={{
+        fontFamily:
+          "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif",
+        fontSize: 18,
+        fontWeight: 700,
+        letterSpacing: "1.5px",
+        color: "#f1f5f9",
+      }}
+    >
+      EXPORTRIO
+    </div>
+
+    <div
+      style={{
+        marginTop: 4,
+        fontFamily:
+          "Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif",
+        fontSize: 11,
+        fontWeight: 500,
+        letterSpacing: "2px",
+        color: "#94a3b8",
+        textTransform: "uppercase",
+      }}
+    >
+      GLOBAL TRADE, SIMPLIFIED
+    </div>
+  </div>
+
+  <div style={{ fontSize: 13 }}>
+    © {new Date().getFullYear()} Exportrio. All rights reserved.
+  </div>
+</footer>
+
     </>
   );
 }
