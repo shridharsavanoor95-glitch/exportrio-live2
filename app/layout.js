@@ -2,6 +2,7 @@ export const metadata = {
   title: "Exportrio | Premium Indian Rice Exporter",
   description:
     "Exportrio exports premium Indian rice worldwide on FOB India basis.",
+  <link rel="icon" href="/favicon.ico" />
 };
 
 export default function RootLayout({ children }) {
